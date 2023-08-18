@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'pro.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',  # 'mssql',
-        'NAME': 'new_db.sqlite3',  # BASE_DIR / 'dbcon1',
+        'NAME': BASE_DIR / 'new_db.sqlite3',  # 'dbcon1',
         # 'HOST': 'ip-172-31-35-90',
         # 'OPTIONS': {'driver': 'ODBC Driver 17 for SQL Server'}
     }
