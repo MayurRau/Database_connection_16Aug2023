@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model</title>
+</head>
+<body>
+<div align="center">
+  <button>
+    <a href="/">click here</a>
+  </button>
+  <table border="1px">
+    <tr>
+      <th>City</th>
+      <th>Name</th>
+    </tr>
+    {%if form%}
+      {%for i in form%}
+        <tr>
+          <td>{{i.city}}</td>
+          <td>{{i.name}}</td>
+        </tr>
+      {%endfor%}
+    {%else%}
+      <h1>कांड हुई गया...</h1>
+    {%endif%}
+  </table>
+</div>
+</body>
+</html>
